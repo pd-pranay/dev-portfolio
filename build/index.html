@@ -10,15 +10,16 @@
 
 <body class="bg-white text-black">
 
+    <!-- nav -->
     <nav class="grid sm:grid-cols-2 py-5 bg-white  sticky top-0 z-10 text-2xl">
         <!-- title -->
-        <div class="text-center text-3xl">
+        <a href="#main" class="text-center text-3xl">
             Pranay
-        </div>
+        </a>
 
         <!-- navigation -->
-        <div class="text-center space-x-5">
-            <a href="#" class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">About</a>
+        <div class="hidden md:block text-center space-x-5">
+            <a href="#about" class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">About</a>
             <a href="#" class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">Expericence</a>
             <a href="#" class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">Project</a>
             <a href="#" class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">Contact</a>
@@ -26,7 +27,7 @@
     </nav>
 
     <!-- main -->
-    <section class="min-h-screen max-w-4xl mx-auto mt-20">
+    <section id="main" class="min-h-screen max-w-4xl mx-auto mt-20">
         <div class="flex flex-col sm:flex-row justify-center items-center gap-10 p-6">
             <img class="rounded-full w-4/6 sm:w-2/6" src="/build/img/p.jpg" alt="pd-pranay">
             <div class="text-center">
@@ -34,13 +35,14 @@
 
                 <p class="font-bold text-5xl py-1">Pranay Das</p>
                 <p class="font-bold text-2xl py-1 text-slate-600">Software Engineer</p>
-                <div class="m-4">
+                <div class="m-4 flex flex-col sm:flex-row items-center gap-4">
                     <button class="btn-plain-white">
                         Download CV
                     </button>
                     <button
                         class="border-black border-solid border px-5 py-2 rounded-full mr-4 bg-black text-white text-xl">
-                        Contact Info</button>
+                        Contact Info
+                    </button>
                 </div>
                 <div class="flex justify-center gap-3">
                     <img class="cursor-pointer h-8" src="/build/img/github.png" alt="github"
@@ -54,38 +56,36 @@
     </section>
 
     <!-- about me -->
-    <section class="min-h-screen">
-        <div>
+    <section id="about" class="min-h-screen">
+        <div style="margin-bottom: 5rem">
             <p class="text-slate-600 text-sm text-center">Get to know more</p>
             <p class="text-5xl font-bold text-center">About me</p>
         </div>
 
-        <div class="w-3/4 mx-auto mt-5">
-            <div class="grid grid-rows-4 sm:grid-cols-3 place-items-center mt-4 sm:space-x-5">
+        <div class="w-3/4 mx-auto grid grid-rows-4 sm:grid-cols-3 justify-items-stretch sm:space-x-4 space-y-4">
 
-                <img src="/build/img/p.jpg" class="w-4/6 rounded-3xl shadow-xl sm:row-span-2" alt="">
-                <div class=" card">
-                    <div class="flex flow-col justify-center">
-                        <img class="h-8" src="/build/img/experience.png" alt="experience">
-                        <div>Experience</div>
-                        <div>2+ years</div>
-                        <div>Frontend Development</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <p>
-                        <img class="h-8" src="/build/img/education.png" alt="education">
-                        Education
-                        B.Sc. Bachelors Degree
-                        M.Sc. Masters Degree
-                </div>
-                <div class="sm:col-span-2">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto corrupti autem accusantium
-                    voluptatibus
-                    voluptate minus, amet architecto accusamus eveniet. Veritatis?
-                </div>
+            <img src="/build/img/p.jpg" class="w-4/6 rounded-3xl shadow-xl sm:row-span-2 mx-auto" alt="">
 
+            <div class="card">
+                <img class="h-8 mx-auto" src="/build/img/experience.png" alt="experience">
+                <p>Experience</p>
+                <p>2+ years</p>
+                <p>Frontend Development</p>
             </div>
+
+            <div class="card">
+                <img class="h-8 mx-auto" src="/build/img/education.png" alt="education">
+                <p>Education</p>
+                <p>B.Sc. Bachelors Degree</p>
+                <p>M.Sc. Masters Degree</p>
+            </div>
+
+            <div class="sm:col-span-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto corrupti autem accusantium
+                voluptatibus
+                voluptate minus, amet architecto accusamus eveniet. Veritatis?
+            </div>
+
         </div>
 
     </section>

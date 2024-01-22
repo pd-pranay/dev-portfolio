@@ -14,5 +14,5 @@
 }
 
 .card {
-    @apply border-solid border-black border rounded-3xl p-5 shadow-md
+    @apply border-solid border-black border rounded-3xl shadow-md text-center py-4
 }
