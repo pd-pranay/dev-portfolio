@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranay's Portfolio</title>
+    <link rel="stylesheet" href="/build/css/style.css">
+</head>
+
+<body class="bg-white text-black">
+
+    <nav class="grid sm:grid-cols-2 py-5 bg-white  sticky top-0 z-10 text-2xl">
+        <!-- title -->
+        <div class="text-center text-3xl">
+            Pranay
+        </div>
+
+        <!-- navigation -->
+        <div class="text-center space-x-5">
+            <a href="#" class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">About</a>
+            <a href="#" class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">Expericence</a>
+            <a href="#" class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">Project</a>
+            <a href="#" class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <section class="min-h-screen max-w-4xl mx-auto mt-20">
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-10 p-6">
+            <img class="rounded-full w-4/6 sm:w-2/6" src="/build/img/p.jpg" alt="pd-pranay">
+            <div class="text-center">
+                <p class="text-slate-600 font-bold text-xl py-1">Hello, I'm</p>
+
+                <p class="font-bold text-5xl py-1">Pranay Das</p>
+                <p class="font-bold text-2xl py-1 text-slate-600">Software Engineer</p>
+                <div class="m-4">
+                    <button class="btn-plain-white">
+                        Download CV
+                    </button>
+                    <button
+                        class="border-black border-solid border px-5 py-2 rounded-full mr-4 bg-black text-white text-xl">
+                        Contact Info</button>
+                </div>
+                <div class="flex justify-center gap-3">
+                    <img class="cursor-pointer h-8" src="/build/img/github.png" alt="github"
+                        onclick="location.href='https://github.com/pd-pranay'">
+                    <img class="cursor-pointer h-8" src="/build/img/linkedin.png" alt="linkedin"
+                        onclick="location.href='https://www.linkedin.com/in/pd-pranay/'">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- about me -->
+    <section class="min-h-screen">
+        <div>
+            <p class="text-slate-600 text-sm text-center">Get to know more</p>
+            <p class="text-5xl font-bold text-center">About me</p>
+        </div>
+
+        <div class="w-3/4 mx-auto mt-5">
+            <div class="grid grid-rows-4 sm:grid-cols-3 place-items-center mt-4 sm:space-x-5">
+
+                <img src="/build/img/p.jpg" class="w-4/6 rounded-3xl shadow-xl sm:row-span-2" alt="">
+                <div class=" card">
+                    <div class="flex flow-col justify-center">
+                        <img class="h-8" src="/build/img/experience.png" alt="experience">
+                        <div>Experience</div>
+                        <div>2+ years</div>
+                        <div>Frontend Development</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p>
+                        <img class="h-8" src="/build/img/education.png" alt="education">
+                        Education
+                        B.Sc. Bachelors Degree
+                        M.Sc. Masters Degree
+                </div>
+                <div class="sm:col-span-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto corrupti autem accusantium
+                    voluptatibus
+                    voluptate minus, amet architecto accusamus eveniet. Veritatis?
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
