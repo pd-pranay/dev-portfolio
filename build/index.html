@@ -1,26 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pranay's Portfolio</title>
-    <link rel="stylesheet" href="/build/css/style.css">
+    <link rel="stylesheet" href="/build/css/style.css" />
 </head>
 
 <body class="bg-white text-black">
-
     <!-- nav -->
-    <nav class="grid sm:grid-cols-2 py-5 bg-white  sticky top-0 z-10 text-2xl">
+    <nav class="grid sm:grid-cols-2 py-5 bg-white sticky top-0 z-10 text-2xl">
         <!-- title -->
-        <a href="#main" class="text-center text-3xl">
-            Pranay
-        </a>
+        <a href="#main" class="text-center text-3xl"> Pranay </a>
 
         <!-- navigation -->
         <div class="hidden md:block text-center space-x-5">
             <a href="#about" class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">About</a>
-            <a href="#" class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">Expericence</a>
+            <a href="#experience"
+                class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">Expericence</a>
             <a href="#" class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">Project</a>
             <a href="#" class="hover:opacity-60 hover:border-b-2 border-solid border-slate-500 pb-2">Contact</a>
         </div>
@@ -29,16 +27,16 @@
     <!-- main -->
     <section id="main" class="min-h-screen max-w-4xl mx-auto mt-20">
         <div class="flex flex-col sm:flex-row justify-center items-center gap-10 p-6">
-            <img class="rounded-full w-4/6 sm:w-2/6" src="/build/img/p.jpg" alt="pd-pranay">
+            <img class="rounded-full w-4/6 sm:w-2/6" src="/build/img/p.jpg" alt="pd-pranay" />
             <div class="text-center">
                 <p class="text-slate-600 font-bold text-xl py-1">Hello, I'm</p>
 
                 <p class="font-bold text-5xl py-1">Pranay Das</p>
-                <p class="font-bold text-2xl py-1 text-slate-600">Software Engineer</p>
+                <p class="font-bold text-2xl py-1 text-slate-600">
+                    Software Engineer
+                </p>
                 <div class="m-4 flex flex-col sm:flex-row items-center gap-4">
-                    <button class="btn-plain-white">
-                        Download CV
-                    </button>
+                    <button class="btn-plain-white">Download CV</button>
                     <button
                         class="border-black border-solid border px-5 py-2 rounded-full mr-4 bg-black text-white text-xl">
                         Contact Info
@@ -46,51 +44,128 @@
                 </div>
                 <div class="flex justify-center gap-3">
                     <img class="cursor-pointer h-8" src="/build/img/github.png" alt="github"
-                        onclick="location.href='https://github.com/pd-pranay'">
+                        onclick="location.href='https://github.com/pd-pranay'" />
                     <img class="cursor-pointer h-8" src="/build/img/linkedin.png" alt="linkedin"
-                        onclick="location.href='https://www.linkedin.com/in/pd-pranay/'">
+                        onclick="location.href='https://www.linkedin.com/in/pd-pranay/'" />
                 </div>
             </div>
-
         </div>
     </section>
 
     <!-- about me -->
     <section id="about" class="min-h-screen">
-        <div style="margin-bottom: 5rem">
-            <p class="text-slate-600 text-sm text-center">Get to know more</p>
-            <p class="text-5xl font-bold text-center">About me</p>
+        <div class="mb-6">
+            <p class="text-slate-600 text-sm text-center p-4">Get to know more</p>
+            <p class="text-4xl sm:text-5xl font-bold text-center">About me</p>
         </div>
 
-        <div class="w-3/4 mx-auto grid grid-rows-4 sm:grid-cols-3 justify-items-stretch sm:space-x-4 space-y-4">
-
-            <img src="/build/img/p.jpg" class="w-4/6 rounded-3xl shadow-xl sm:row-span-2 mx-auto" alt="">
+        <div class="w-3/4 mx-auto grid sm:grid-cols-3 justify-center sm:space-x-4 space-y-4">
+            <img src="/build/img/p.jpg" class="sm:mt-7 rounded-3xl shadow-md sm:row-span-2 mx-auto" alt="" />
 
             <div class="card">
-                <img class="h-8 mx-auto" src="/build/img/experience.png" alt="experience">
+                <img class="h-8 mx-auto" src="/build/img/experience.png" alt="experience" />
                 <p>Experience</p>
                 <p>2+ years</p>
                 <p>Frontend Development</p>
             </div>
 
             <div class="card">
-                <img class="h-8 mx-auto" src="/build/img/education.png" alt="education">
+                <img class="h-8 mx-auto" src="/build/img/education.png" alt="education" />
                 <p>Education</p>
                 <p>B.Sc. Bachelors Degree</p>
                 <p>M.Sc. Masters Degree</p>
             </div>
 
-            <div class="sm:col-span-2">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto corrupti autem accusantium
-                voluptatibus
-                voluptate minus, amet architecto accusamus eveniet. Veritatis?
+            <div class="sm:col-span-2 text-center">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
+                corrupti autem accusantium voluptatibus voluptate minus, amet
+                architecto accusamus eveniet. Veritatis?
             </div>
-
         </div>
-
     </section>
 
+    <!-- expericence -->
+    <section id="experience" class="mx-auto min-h-screen px-7 pt-10">
+        <div class="text-center">
+            <p class="text-sm text-slate-600 p-4">Explore my</p>
+            <p class="text-4xl sm:text-5xl font-bold p-2">Expericence</p>
+        </div>
 
+        <div class="flex flex-col sm:flex-row gap-3 items-center">
+            <!-- skills container -->
+            <div class="w-full sm:w-1/2 p-4">
+                <h1 class="text-3xl sm:text-4xl text-center p-4">Front End</h1>
+
+                <div class="grid sm:grid-cols-2 my-5 gap-y-5 justify-items-center">
+                    <div class="flex w-full sm:w-1/2 gap-4 justify-center">
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <div class="flex flex-col">
+                            <h3>HTML</h3>
+                            <p class="text-center">Experienced</p>
+                        </div>
+                    </div>
+                    <div class="flex w-full sm:w-1/2 gap-4 justify-center">
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <div class="flex flex-col">
+                            <h3>HTML</h3>
+                            <p class="text-center">Experienced</p>
+                        </div>
+                    </div>
+
+                    <div class="flex w-full sm:w-1/2 gap-4 justify-center">
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <div class="flex flex-col">
+                            <h3>HTML</h3>
+                            <p class="text-center">Experienced</p>
+                        </div>
+                    </div>
+                    <div class="flex w-full sm:w-1/2 gap-4 justify-center">
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <div class="flex flex-col">
+                            <h3>HTML</h3>
+                            <p class="text-center">Experienced</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-1/2 p-4">
+                <h1 class="text-3xl sm:text-4xl text-center p-4">Backend End</h1>
+
+                <div class="grid sm:grid-cols-2 my-5 gap-y-5 justify-items-center">
+                    <div class="flex w-full sm:w-1/2 gap-4 justify-center">
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <div class="flex flex-col">
+                            <h3>HTML</h3>
+                            <p class="text-center">Experienced</p>
+                        </div>
+                    </div>
+                    <div class="flex w-full sm:w-1/2 gap-4 justify-center">
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <div class="flex flex-col">
+                            <h3>HTML</h3>
+                            <p class="text-center">Experienced</p>
+                        </div>
+                    </div>
+
+                    <div class="flex w-full sm:w-1/2 gap-4 justify-center">
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <div class="flex flex-col">
+                            <h3>HTML</h3>
+                            <p class="text-center">Experienced</p>
+                        </div>
+                    </div>
+                    <div class="flex w-full sm:w-1/2 gap-4 justify-center">
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <div class="flex flex-col">
+                            <h3>HTML</h3>
+                            <p class="text-center">Experienced</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
