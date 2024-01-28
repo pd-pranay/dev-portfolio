@@ -13,6 +13,19 @@
     @apply border-black border-solid border px-3 py-2 rounded-full mr-4 hover:bg-black hover:text-white text-xl
 }
 
+
+.btn-plain-white-sm {
+    @apply border-black border-solid border px-2 py-1 rounded-md mr-4 hover:bg-black hover:text-white text-sm font-light
+}
+
 .card {
     @apply border-solid border-black border rounded-3xl shadow-md text-center py-4
+}
+
+.title-text {
+    @apply text-3xl sm:text-5xl font-bold
+}
+
+.navigations {
+    @apply hover:text-gray-500 hover:underline decoration-gray-500 underline-offset-[1rem] pb-2
 }
