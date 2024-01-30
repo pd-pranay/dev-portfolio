@@ -3,73 +3,98 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pranay's Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/build/css/style.css" />
+    <script src="/build/js/main.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/build/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/build/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/build/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="description" content="pd-pranay" />
 </head>
 
-<body class="bg-white text-black">
+<body class="bg-white text-black min-h-screen">
     <!-- nav -->
-    <nav class="grid sm:grid-cols-2 py-5 bg-white sticky top-0 z-10 text-2xl">
+    <nav class="grid grid-cols-2 justify-items-end py-5 bg-white sticky top-0 z-10 text-2xl">
         <!-- title -->
         <a href="#main" class="text-center text-3xl"> Pranay </a>
 
         <!-- navigation -->
-        <div class="hidden md:block text-center space-x-5">
-            <a href="#about" class="navigations">About</a>
-            <a href="#experience" class="navigations">Expericence</a>
-            <a href="#projects" class="navigations">Project</a>
-            <a href="#contact" class="navigations">Contact</a>
+
+        <div>
+            <button id="hamburger-button" class="text-3xl sm:hidden pr-5 pb-4 focus:outline-none">
+                &#9776;
+            </button>
+            <div class="hidden md:block text-center space-x-5">
+                <a href="#about" class="navigations">About</a>
+                <a href="#experience" class="navigations">Expericence</a>
+                <a href="#projects" class="navigations">Project</a>
+                <a href="#contact" class="navigations">Contact</a>
+            </div>
         </div>
+        <section id="mobile-menu"
+            class="absolute top-0 bg-white w-full text-3xl flex-col justify-content-center origin-top animate-open-menu hidden">
+            <button class="text-6xl self-end px-6">&times;</button>
+            <nav class="flex flex-col min-h-screen items-center text-center py-8" aria-label="mobile">
+                <a href="#about" class="navigations">About</a>
+                <a href="#experience" class="navigations">Expericence</a>
+                <a href="#projects" class="navigations">Project</a>
+                <a href="#contact" class="navigations">Contact</a>
+            </nav>
+        </section>
     </nav>
 
     <!-- main -->
-    <section id="main" class="min-h-screen max-w-4xl mx-auto mt-20">
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-10 p-6">
-            <img class="rounded-full w-4/6 sm:w-2/6" src="/img/p.jpg" alt="pd-pranay" />
-            <div class="text-center">
-                <p class="text-slate-600 font-bold text-xl py-1">Hello, I'm</p>
+    <div class="scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+        <section id="main" class="min-h-screen max-w-4xl mx-auto mt-20">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-10 p-6">
+                <img class="rounded-full w-4/6 sm:w-2/6 border border-gray-300" src="/build/img/m.jpeg"
+                    alt="pd-pranay" />
+                <div class="text-center">
+                    <p class="text-slate-600 font-bold text-xl py-1">Hello, I'm</p>
 
-                <p class="font-bold text-5xl py-1">Pranay Das</p>
-                <p class="font-bold text-2xl py-1 text-slate-600">
-                    Software Engineer
-                </p>
-                <div class="m-4 flex flex-col sm:flex-row items-center gap-4">
-                    <button class="btn-plain-white">Download CV</button>
-                    <button
-                        class="border-black border-solid border px-5 py-2 rounded-full mr-4 bg-black text-white text-xl">
-                        Contact Info
-                    </button>
-                </div>
-                <div class="flex justify-center gap-3">
-                    <img class="cursor-pointer h-8" src="/img/github.png" alt="github"
-                        onclick="location.href='https://github.com/pd-pranay'" />
-                    <img class="cursor-pointer h-8" src="/img/linkedin.png" alt="linkedin"
-                        onclick="location.href='https://www.linkedin.com/in/pd-pranay/'" />
+                    <p class="font-bold text-5xl py-1">Pranay Das</p>
+                    <p class="font-bold text-2xl py-1 text-slate-600">
+                        Software Engineer
+                    </p>
+                    <div class="m-4 flex flex-col sm:flex-row items-center gap-4">
+                        <button class="btn-plain-white">Download CV</button>
+                        <button
+                            class="border-black border-solid border px-5 py-2 rounded-full mr-4 bg-black text-white text-xl">
+                            Contact Info
+                        </button>
+                    </div>
+                    <div class="flex justify-center gap-3">
+                        <img class="cursor-pointer h-8" src="/build/img/github.png" alt="github"
+                            onclick="location.href='https://github.com/pd-pranay'" />
+                        <img class="cursor-pointer h-8" src="/build/img/linkedin.png" alt="linkedin"
+                            onclick="location.href='https://www.linkedin.com/in/pd-pranay/'" />
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </div>
     <!-- about me -->
-    <section id="about" class="min-h-screen">
+    <section id="about" class="scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
         <div class="mb-6">
             <p class="text-slate-600 text-sm text-center p-4">Get to know more</p>
             <p class="text-4xl sm:text-5xl font-bold text-center">About me</p>
         </div>
 
         <div class="w-3/4 mx-auto grid sm:grid-cols-3 justify-center sm:space-x-4 space-y-4">
-            <img src="/img/p.jpg" class="sm:mt-7 rounded-3xl shadow-md sm:row-span-2 mx-auto" alt="" />
+            <img src="/build/img/q.jpeg" class=" sm:mt-7 rounded-3xl shadow-md sm:row-span-2 mx-auto" alt="" />
 
             <div class="card">
-                <img class="h-8 mx-auto" src="/img/experience.png" alt="experience" />
+                <img class="h-8 mx-auto" src="/build/img/experience.png" alt="experience" />
                 <p>Experience</p>
                 <p>2+ years</p>
                 <p>Frontend Development</p>
             </div>
 
             <div class="card">
-                <img class="h-8 mx-auto" src="/img/education.png" alt="education" />
+                <img class="h-8 mx-auto" src="/build/img/education.png" alt="education" />
                 <p>Education</p>
                 <p>B.Sc. Bachelors Degree</p>
                 <p>M.Sc. Masters Degree</p>
@@ -84,27 +109,28 @@
     </section>
 
     <!-- expericence -->
-    <section id="experience" class="mx-auto min-h-screen px-7 pt-10">
-        <div class="text-center">
+    <section id="experience"
+        class="mx-auto px-7 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+        <div class="text-center pt-10">
             <p class="text-sm text-slate-600 p-4">Explore my</p>
             <p class="text-4xl sm:text-5xl font-bold p-2">Expericence</p>
         </div>
 
-        <div class="flex flex-col sm:flex-row gap-3 items-center">
+        <div class="mt-5 flex flex-col sm:flex-row gap-5 items-center">
             <!-- skills container -->
             <div class="w-full sm:w-1/2 p-4">
                 <h1 class="text-3xl sm:text-4xl text-center p-4">Front End</h1>
 
                 <div class="grid sm:grid-cols-2 my-5 gap-y-5 justify-items-center">
                     <div class="flex w-full sm:w-1/2 gap-4 justify-center">
-                        <img src="/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
                         <div class="flex flex-col">
                             <h3>HTML</h3>
                             <p class="text-center">Experienced</p>
                         </div>
                     </div>
                     <div class="flex w-full sm:w-1/2 gap-4 justify-center">
-                        <img src="/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
                         <div class="flex flex-col">
                             <h3>HTML</h3>
                             <p class="text-center">Experienced</p>
@@ -112,14 +138,14 @@
                     </div>
 
                     <div class="flex w-full sm:w-1/2 gap-4 justify-center">
-                        <img src="/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
                         <div class="flex flex-col">
                             <h3>HTML</h3>
                             <p class="text-center">Experienced</p>
                         </div>
                     </div>
                     <div class="flex w-full sm:w-1/2 gap-4 justify-center">
-                        <img src="/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
                         <div class="flex flex-col">
                             <h3>HTML</h3>
                             <p class="text-center">Experienced</p>
@@ -133,14 +159,14 @@
 
                 <div class="grid sm:grid-cols-2 my-5 gap-y-5 justify-items-center">
                     <div class="flex w-full sm:w-1/2 gap-4 justify-center">
-                        <img src="/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
                         <div class="flex flex-col">
                             <h3>HTML</h3>
                             <p class="text-center">Experienced</p>
                         </div>
                     </div>
                     <div class="flex w-full sm:w-1/2 gap-4 justify-center">
-                        <img src="/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
                         <div class="flex flex-col">
                             <h3>HTML</h3>
                             <p class="text-center">Experienced</p>
@@ -148,14 +174,14 @@
                     </div>
 
                     <div class="flex w-full sm:w-1/2 gap-4 justify-center">
-                        <img src="/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
                         <div class="flex flex-col">
                             <h3>HTML</h3>
                             <p class="text-center">Experienced</p>
                         </div>
                     </div>
                     <div class="flex w-full sm:w-1/2 gap-4 justify-center">
-                        <img src="/img/checkmark.png" alt="Experience icon" class="h-8" />
+                        <img src="/build/img/checkmark.png" alt="Experience icon" class="h-8" />
                         <div class="flex flex-col">
                             <h3>HTML</h3>
                             <p class="text-center">Experienced</p>
@@ -167,7 +193,7 @@
     </section>
 
     <!-- projects -->
-    <section class="min-h-screen p-9" id="projects">
+    <section class="scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height p-9" id="projects">
         <div class="text-center">
             <p>Browse my recent</p>
             <p class="title-text">Project</p>
@@ -176,7 +202,7 @@
         <div class="flex flex-col sm:flex-row gap-4 items-center justify-center mt-10 flex-wrap">
             <article
                 class="flex flex-col gap-4 items-center justify-between border-solid border-black border rounded-3xl shadow-md text-center py-4 px-4">
-                <img src="/img/project-1.png" class="h-60 rounded-3xl" />
+                <img src="/build/img/project-1.png" class="h-60 rounded-3xl" />
                 <p>Project One</p>
                 <div class="flex flex-col sm:flex-row gap-4 items-center ml-5">
                     <button class="btn-plain-white-sm">Github</button>
@@ -186,7 +212,7 @@
 
             <article
                 class="flex flex-col gap-4 items-center justify-between border-solid border-black border rounded-3xl shadow-md text-center py-4 px-4">
-                <img src="/img/project-1.png" class="h-60 rounded-3xl" />
+                <img src="/build/img/project-1.png" class="h-60 rounded-3xl" />
                 <p>Project One</p>
                 <div class="flex flex-col sm:flex-row gap-4 items-center ml-5">
                     <button class="btn-plain-white-sm">Github</button>
@@ -196,7 +222,7 @@
 
             <!-- <article
                 class="flex flex-col gap-4 items-center justify-between border-solid border-black border rounded-3xl shadow-md text-center py-4 px-4">
-                <img src="/img/project-1.png" class="h-60 rounded-3xl">
+                <img src="/build/img/project-1.png" class="h-60 rounded-3xl">
                 <p>Project One</p>
                 <div class="flex flex-col sm:flex-row gap-4 items-center ml-5">
                     <button class="btn-plain-white-sm">Github</button>
@@ -206,7 +232,7 @@
 
             <article
                 class="flex flex-col gap-4 items-center justify-between border-solid border-black border rounded-3xl shadow-md text-center py-4 px-4">
-                <img src="/img/project-1.png" class="h-60 rounded-3xl" />
+                <img src="/build/img/project-1.png" class="h-60 rounded-3xl" />
                 <p>Project One</p>
                 <div class="flex flex-col sm:flex-row gap-4 items-center ml-5">
                     <button class="btn-plain-white-sm">Github</button>
@@ -223,8 +249,8 @@
             <p class="title-text">Contact Me</p>
         </article>
         <div class="min-h-screen flex items-center justify-center bg-red-300">
-            <img src="/img/linkedin.png" alt="" class="h-8">
-            <img src="/img/linkedin.png" alt="" class="h-8">
+            <img src="/build/img/linkedin.png" alt="" class="h-8">
+            <img src="/build/img/linkedin.png" alt="" class="h-8">
         </div>
     </section> -->
 
@@ -232,8 +258,8 @@
         <p>Get in Touch</p>
         <p class="title-text">Contact Me</p>
         <div class="flex flex-col sm:flex-row gap-8 justify-center p-3">
-            <img src="/img/linkedin.png" alt="" class="h-8">
-            <img src="/img/linkedin.png" alt="" class="h-8">
+            <img src="/build/img/linkedin.png" alt="" class="h-8">
+            <img src="/build/img/linkedin.png" alt="" class="h-8">
         </div>
     </section> -->
 
@@ -242,9 +268,9 @@
         <div class="title-text">Contact Me</div>
         <div
             class="flex flex-col sm:flex-row gap-8 justify-center py-3 px-2 smw-80 w-60 border border-black border-solid rounded-xl items-center mt-24 mx-3">
-            <img src="/img/linkedin.png" alt="" class="h-8 w-8" />
-            <img src="/img/ig.png" alt="" class="h-8 w-8" />
-            <img src="/img/mail.png" alt="" class="h-8 w-8" />
+            <img src="/build/img/linkedin.png" alt="" class="h-8 w-8" />
+            <img src="/build/img/ig.png" alt="" class="h-8 w-8" />
+            <img src="/build/img/mail.png" alt="" class="h-8 w-8" />
         </div>
     </div>
 
