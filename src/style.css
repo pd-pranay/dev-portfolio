@@ -19,7 +19,7 @@
 }
 
 .card {
-    @apply border-solid border-black border rounded-3xl shadow-md text-center py-4
+    @apply border-solid border-black border rounded-3xl shadow-md text-center py-4 w-full
 }
 
 .title-text {
