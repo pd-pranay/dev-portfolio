@@ -46,36 +46,34 @@
         </section>
     </nav>
 
-    <!-- main -->
-    <div class="scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
-        <section id="main" class="min-h-screen max-w-4xl mx-auto mt-20">
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-10 p-6">
-                <img class="rounded-full w-4/6 sm:w-2/6 border border-gray-300" src="/build/img/profile.jpeg"
-                    alt="pd-pranay" />
-                <div class="text-center">
-                    <p class="text-slate-600 font-bold text-xl py-1">Hello, I'm</p>
+    <!-- heros -->
+    <section id="main" class="flex flex-col sm:flex-row justify-center items-center gap-10 p-6 
+            scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
 
-                    <p class="font-bold text-5xl py-1">Pranay Das</p>
-                    <p class="font-bold text-2xl py-1 text-slate-600">
-                        Software Engineer
-                    </p>
-                    <div class="m-4 flex flex-col sm:flex-row items-center gap-4">
-                        <button class="btn-plain-white">Download CV</button>
-                        <button
-                            class="border-black border-solid border px-5 py-2 rounded-full mr-4 bg-black text-white text-xl">
-                            Contact Info
-                        </button>
-                    </div>
-                    <div class="flex justify-center gap-3">
-                        <img class="cursor-pointer h-8" src="/build/img/github.png" alt="github"
-                            onclick="location.href='https://github.com/pd-pranay'" />
-                        <img class="cursor-pointer h-8" src="/build/img/linkedin.png" alt="linkedin"
-                            onclick="location.href='https://www.linkedin.com/in/pd-pranay/'" />
-                    </div>
-                </div>
+        <img class="rounded-full w-4/6 md:w-2/6 lg:w-2/12  border border-gray-300" src="/build/img/profile.jpeg"
+            alt="pd-pranay" />
+        <div class="text-center">
+            <p class="text-slate-600 font-bold text-xl py-1">Hello, I'm</p>
+
+            <p class="font-bold text-5xl py-1">Pranay Das</p>
+            <p class="font-bold text-2xl py-1 text-slate-600">
+                Software Engineer
+            </p>
+            <div class="m-4 flex flex-col sm:flex-row items-center gap-4">
+                <button class="btn-plain-white">Download CV</button>
+                <button
+                    class="border-black border-solid border px-5 py-2 rounded-full mr-4 bg-black text-white text-xl">
+                    <a href="#contact" class="">Contact Info</a>
+                </button>
             </div>
-        </section>
-    </div>
+            <div class="flex justify-center gap-3">
+                <img class="cursor-pointer h-8" src="/build/img/github.png" alt="github"
+                    onclick="location.href='https://github.com/pd-pranay'" />
+                <img class="cursor-pointer h-8" src="/build/img/linkedin.png" alt="linkedin"
+                    onclick="location.href='https://www.linkedin.com/in/pd-pranay/'" />
+            </div>
+        </div>
+    </section>
 
     <!-- about me -->
     <section id="about" class="scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
@@ -234,7 +232,7 @@
     </section>
 
     <!-- contact -->
-    <div class="px-6 flex flex-col justify-center items-center h-full mx-auto">
+    <div id="contact" class="px-6 flex flex-col justify-center items-center h-full mx-auto">
         <div>Get in Touch</div>
         <div class="title-text">Contact Me</div>
         <div
